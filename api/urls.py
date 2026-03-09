@@ -7,6 +7,6 @@ urlpatterns = [
     path('upgrade/', UpgradeToPremium.as_view(), name='upgrade'),
     path('stats/', SubscriptionStats.as_view(), name='stats'),
     
-    # New route for user registration
+
     path('register/', RegisterUser.as_view(), name='register'),
 ]

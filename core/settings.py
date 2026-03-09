@@ -133,7 +133,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# Setări pentru Django REST Framework și Autentificare
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
@@ -142,14 +142,14 @@ REST_FRAMEWORK = {
 }
 
 
-# Add this block to change token lifetime
+
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
 }
 
 
-# Swagger Documentation Settings
+
 SPECTACULAR_SETTINGS = {
     'TITLE': 'SaaS Subscription API',
     'DESCRIPTION': 'Backend API for managing user registrations, subscriptions, and payments.',
